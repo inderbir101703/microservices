@@ -1,0 +1,26 @@
+skaffold is not a kubernetes object it is a separate tools
+
+manifests : ./infre/k8s/* apply all yaml files and deleted config object when we stop it
+
+---
+
+manual src ..js
+Whenever something changes inside this directory, scaffold is going to try to take those changes and
+
+somehow update our pod.
+
+There are two ways in which scaffold is going to try to update our pod.
+
+First off, if we make a change to a JavaScript file as indicated by this little matcher right here,
+
+if we make a change to a JavaScript file, then scaffold is going to try to take that change file and
+
+just directly throw it into our pod.
+
+It's going to literally take that file.
+
+We update it and copy it directly into the pod itself.
+
+So our pod is going to always have the latest code inside of it.
+
+---
